@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## things to do before running script 
 1. must run npm install to install all the missing packages 
 2. Must replace all the database config to your own , since I have used firebase my config are stored sepratly in .env file.
+
+
 => if using firebase firestore then create .env file in project and store your config file there, and reference them to firebase.js file.
 
 
