@@ -1,0 +1,35 @@
+.login, .register {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 100vh;
+    text-align: center;
+}
+.login__sidebar, .register__sidebar {
+    color: rgb(57, 75, 238);
+    height: 100vh;
+}
+.login__sidebar img , .register__sidebar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 526px) {
+    .login, .register {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .login__sidebar, .register__sidebar {
+        display: none;
+    }
+}

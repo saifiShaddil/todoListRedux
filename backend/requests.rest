@@ -1,0 +1,23 @@
+get http://127.0.0.1:3500/api/user
+
+###
+
+post http://127.0.0.1:3500/api/user/add
+Content-Type: application/json
+
+{
+    "username": "Sandra",
+    "email": "sdxlover@gmail.com"
+}
+
+### 
+get http://localhost:3500/api/messages
+
+###
+post http://localhost:3500/api/messages/newMsg
+Content-Type: application/json
+
+{
+    "username": "Billy",
+    "message": "hey what are you doing" 
+}

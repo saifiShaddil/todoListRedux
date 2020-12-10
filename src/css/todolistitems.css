@@ -1,0 +1,43 @@
+.todolistitems {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-content: center;
+    place-items: center;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
+.todolistitems .todolistitems__name {
+    text-align: center;
+    min-width: 200px;
+
+}
+
+.todolistitems__name h4 {
+
+    width: 200px;
+    font-size: 1.1rem;
+    color: var(--light);
+    text-overflow: clip;
+    word-wrap: break-word;
+    letter-spacing: 1.2px;
+    line-height: 1.1rem;
+    font-weight: 500;
+}
+
+.todolistitems__crude {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.todolistitems__crude .todolistitems__clear {
+    color: var(--light);
+    transition: all 0.3s;
+}
+
+.todolistitems__clear:hover {
+    color: salmon;
+}

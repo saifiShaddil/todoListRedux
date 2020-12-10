@@ -1,0 +1,95 @@
+.home {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 1.5em;
+}
+.home .home__Logout {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+.home h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h6>span {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.home__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__title h3 {
+  font-weight: 500;
+  color: var(--dark);
+  position: relative;
+  margin: 0.5em 0 0;
+}
+
+.home__title h1::after {
+  content: "";
+  background-color: rgb(105, 105, 105);
+  height: 3px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px rgb(95, 95, 94);
+}
+
+.home__title .home__addtodo {
+  width: 50%;
+  margin: 0;
+  padding: 3px 9px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.home__addtodo .home__addinput {
+  flex: 1;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+.home__addtodo .home__addbutton {
+  background-color: var(--light);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--dark);
+  transition: all 0.4s;
+}
+
+.home__addtodo .home__addbutton:hover {
+  background-color: blueviolet;
+  color: var(--light);
+  border-color: var(--dark);
+}
+
+ul {
+  width: 100%;
+}
+
+.home .todoitems {
+  width: 90%;
+  display: grid;
+  gap: 1em;
+  place-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
